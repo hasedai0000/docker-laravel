@@ -6,6 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Todo extends Model
 {
+    // モデルに関連付けるテーブル
+    protected $table = 'todos';
+
+    // テーブルに関連付ける主キー
+    protected $primaryKey = 'id';
     /**
      * The attributes that are mass assignable.
      *
