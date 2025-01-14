@@ -21,11 +21,11 @@ return Application::configure(basePath: dirname(__DIR__))
         ]);
 
         // TODO: テスト用にCSRFトークンを無効にしている
-        $middleware->validateCsrfTokens(except: [
-            'api/*',
-            'login',
-            // 'http://example.com/foo/*', // ...
-        ]);
+        // $middleware->validateCsrfTokens(except: [
+        //     'api/*',
+        //     'login',
+        //     // 'http://example.com/foo/*', // ...
+        // ]);
 
         //
     })
