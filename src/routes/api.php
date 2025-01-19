@@ -14,4 +14,8 @@ Route::middleware(['auth:sanctum'])->group(function () {
     });
 
     Route::get('/todos', [TodoController::class, 'index']);
+    Route::post('/todos', [TodoController::class, 'register']);
+    Route::put('/todos/{id}', [TodoController::class, 'update']);
+    Route::delete('/todos/{id}', [TodoController::class, 'delete']);
+    Route::get('/todos/{id}', [TodoController::class, 'show']);
 });

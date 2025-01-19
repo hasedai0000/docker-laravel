@@ -17,6 +17,7 @@ class Todo extends Model
      * @var list<string>
      */
     protected $fillable = [
+        'user_id',
         'title',
         'content',
         'is_completed',
@@ -31,6 +32,7 @@ class Todo extends Model
     protected function casts(): array
     {
         return [
+            'user_id' => 'integer',
             'title' => 'string',
             'content' => 'string',
             'is_completed' => 'boolean',

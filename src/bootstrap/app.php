@@ -24,6 +24,7 @@ return Application::configure(basePath: dirname(__DIR__))
         $middleware->validateCsrfTokens(except: [
             'api/*',
             'login',
+            'register',
             // 'http://example.com/foo/*', // ...
         ]);
 
